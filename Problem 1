@@ -1,0 +1,52 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+
+
+int main()
+{ int hours, bill, a, b, c;
+  char choice;
+  a= 995;
+  b=1495;
+  c=1995;
+  
+  cout << "This Program Calculates Your Monthly Bill for Internet \n " << "\n";
+  cout << "These are the Subscription Packages given by your Internet Sercice Provider: \n" << "\n";
+  cout << "Package A: For P995/mo 10 hrs of access are provided. Additional hours are P20/hr. \n" ;
+  cout << "Package B: For P1495/mo 20 hrs of access are provided. Additional hours are P10/hr. \n" ;
+  cout << "Package C: For P1995/mo of unlimited access is provided. \n" << "\n";
+  cout << "Enter Purchased Package Subscription (A , B , C) \n";
+  cin  >> choice;
+  cout << "\n";
+  
+  cout << "Enter Number of Hours Used This Month \n" ;
+  cin  >> hours;
+  cout << "\n";
+  
+  switch (choice)
+  { case 'A':
+    case 'a': 
+              if (hours <= 10)
+               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P" <<  a;
+               else
+               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P" << a +( (hours - 10) * 20) ;
+               break;
+    case 'B':
+    case 'b': 
+              if (hours <= 20)
+               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P" <<  c;
+               else
+               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P" << b +( (hours - 20) * 10) ;
+               break;
+    case 'C':
+    case 'c': 
+               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P" <<  c;
+               break;
+    default:
+    	       cout << "Error! You Entered A Package Not given by Your Internet Service Provider";
+  }
+  _getch();
+  return 0;
+}
