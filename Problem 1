@@ -29,20 +29,20 @@ int main()
   { case 'A':
     case 'a': 
               if (hours <= 10)
-               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P" <<  a;
+               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P " <<  a;
                else
-               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P" << a +( (hours - 10) * 20) ;
+               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P " << a +( (hours - 10) * 20) ;
                break;
     case 'B':
     case 'b': 
               if (hours <= 20)
-               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P" <<  c;
+               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P " <<  c;
                else
-               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P" << b +( (hours - 20) * 10) ;
+               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P " << b +( (hours - 20) * 10) ;
                break;
     case 'C':
     case 'c': 
-               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P" <<  c;
+               cout << "This is your Monthly Bill Corresponding to Your Purchased Package : P " <<  c;
                break;
     default:
     	       cout << "Error! You Entered A Package Not given by Your Internet Service Provider";
