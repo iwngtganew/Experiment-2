@@ -1,0 +1,55 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{ float gallons, demand, unpaid, bill, charge, late;
+  char o;
+  demand = 35; 
+  charge = 1.10;
+  late = 20;
+
+  cout << "This Program Calculates Your Monthly Water Bill For Recent and Previous Month \n" << "\n";
+  cout << "Enter Your Meter Readings in Gallons \n";
+  cin  >> gallons;
+  
+  if (gallons <= 0)
+  cout << "Error! Enter A Proper Amount \n";
+  else
+  {
+  
+  bill = demand + (gallons * charge);
+  
+  cout << "Do You Have Unpaid Balance? (Y/N) \n";
+  cin  >> o;
+  
+  switch (o)
+   { case 'Y':
+   	 case 'y':
+   	           cout << "Enter Amount of Unpaid Balance : \n";
+   	 	       cin  >> unpaid;
+   	 	       if (unpaid > 0)
+   	 	       cout << "Your Bill is : P " << bill + late << "  " << "[ Late Fee Included (P 20) ]";
+			   else if (unpaid < 0)
+			   cout << "Your Water Service Provider Owes You :" << -1 * unpaid;
+			   else
+			   cout << "Please Enter A Proper Amount";
+			   break;
+	 case 'N':
+	 case 'n':
+	 	       cout << "Your Bill is : P " << bill;
+	 	       break;
+	 default:
+	 	       cout << "Please Answer Only With Y/N or y/n";
+   }
+  }
+
+   
+   
+   _getch();
+   return 0;
+   
+}
