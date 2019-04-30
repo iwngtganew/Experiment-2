@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{   int i, n, sum;
+    sum=0;
+    
+    cout << "This Program Calculates The Sum From 1 up to A Given Number \n";
+    cout << "\n" << "Enter A Positive Integer: \n";
+    cin  >> n; 
+
+    if (n<=0)
+    { cout << "\n Error! This Program Only Calculates Positive Integers!"; }
+    
+    else
+    {
+    while (n <= 0);
+    {
+    for( i=1; i <= n; i++)
+    { sum = sum + i;
+      if (i<n) continue;
+      cout << "\n" << "The Sum is: \n" << sum; } 
+  	}
+    }
+   
+   
+	  _getch();
+  	return 0;
+}
