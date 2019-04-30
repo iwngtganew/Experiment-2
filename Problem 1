@@ -25,6 +25,11 @@ int main()
   cin  >> hours;
   cout << "\n";
   
+  if (hours<0)
+  { cout << "That's Impossible!";
+  }
+  else
+  
   switch (choice)
   { case 'A':
     case 'a': 
