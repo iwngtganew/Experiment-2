@@ -1,0 +1,25 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+{ double x, y;
+
+
+  cout << "This Program  will generate the multiplication table (up to x10) of a number \n" << "\n";
+  cout << "Enter A Number : \n";
+  cin  >> y;
+  cout << "\n";
+  cout << "The Muliplication Table of Your Number (up to x10) : \n" << "\n";
+ 
+ 
+  for (x=1; x<=10; x++ )
+  { cout << x << " * " <<  y << " = " << ( x * y ) << "\n"; } 
+  
+  
+  _getch();
+  return 0;
+}
