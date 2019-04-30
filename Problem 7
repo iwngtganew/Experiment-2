@@ -24,10 +24,10 @@ int main()
     { sum = sum + i;
       if (i<n) continue;
       cout << "\n" << "The Sum is: \n" << sum; } 
-  	}
+    }
     }
    
    
-	  _getch();
-  	return 0;
+    _getch();
+    return 0;
 }
