@@ -34,7 +34,7 @@ int main()
    	 	       if (unpaid > 0)
    	 	       cout << "Your Bill is : P " << bill + late << "  " << "[ Late Fee Included (P 20) ]";
 			   else if (unpaid < 0)
-			   cout << "Your Water Service Provider Owes You :" << -1 * unpaid;
+			   cout << "Your Water Service Provider Owes You : P " << -1 * unpaid;
 			   else
 			   cout << "Please Enter A Proper Amount";
 			   break;
