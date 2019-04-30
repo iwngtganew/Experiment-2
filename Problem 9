@@ -1,0 +1,44 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{  int c,r,j;
+
+   
+   cout << "This Program Generates A Box Using ""*"" Characters With Given Rows and Columns \n" << "\n";
+   cout << "Enter Number of Columns : \n";
+   cin  >> r;
+   cout << "\n";
+   cout << "Enter Number of Rows : \n";
+   cin  >> c;
+   cout << "\n";
+   cout << "This is what your box looks like: \n";
+   cout << "\n";
+   
+   
+   if (c>r)
+   for (int i=0; i < c ; i++)
+   { for (int j = 0; j <  c ; j++)
+   
+     if(j==r) break;
+	   else
+     cout << "* ";
+     cout << "\n";	 
+   }
+ 
+   else 
+   for (int i=1; i <= c ; i++)
+   { for (int j = 0; j < r ; j++)
+   
+     if(j==r) break;
+	   else
+     cout << "* ";
+     cout << "\n";
+   }
+  
+  
+   _getch();
+   return 0;
+}
