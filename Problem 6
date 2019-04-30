@@ -1,0 +1,44 @@
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+{  double x, y, z;
+   x=0;
+   y=1;
+   z=0;
+   
+   cout << "This Program Generates the Next 20 Fibonacci Numbers After 0 & 1 \n";
+   cout << "\n";
+
+   
+   for (int i=0; i<=21; i++)	
+   {  if (i==0)
+      {cout << x << ",";
+      continue;
+		 }   
+		 
+	  if (i==1)
+      {cout << y << ",";
+      continue;
+		 } 
+		  
+      z = x + y;
+      x = y;
+      y = z;
+      
+      if (i==21)
+      {cout << z;
+      continue;
+	  }
+       cout << z << ",";
+   }
+	
+	
+	_getch();
+	return 0;
+}
