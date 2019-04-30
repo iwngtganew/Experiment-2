@@ -1,0 +1,41 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{ int a,b,c;
+  
+  cout << "This Program Identifies The Largest Of Three Numbers \n" << "\n";
+  cout << "Enter First Number \n";
+  cin  >> a; 
+  cout << "Enter Second Number \n";
+  cin  >> b; 
+  cout << "Enter Third Number \n";
+  cin  >> c;   
+  
+
+  if (a>b && a>c)
+     cout << "The Largest Number is " << a;
+  else if (b>a && b>c)
+     cout << "The Largest Number is " << b;
+  else if (c>a && c>b)
+     cout << "The Largest Number is " << c;
+  else if (a==b && b>c)
+     cout << "The Largest Number is " << a;
+  else if (b==c && c>a)
+     cout << "The Largest Number is " << b;
+  else if (a==c && c>b)
+     cout << "The Largest Number is " << a;
+  else if (a==b && b==c)   
+     cout << "The Largest Number is " << a;
+  else 
+     cout << "Error! Cannot Determine";
+      
+     
+   _getch();
+   return 0;
+   
+}
