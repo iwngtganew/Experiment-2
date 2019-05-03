@@ -29,9 +29,7 @@ int main ()
     cout << i << ",";
    }
    
-  cout << "30";
-  
-  
+
   _getch();
   return 0;
 }
