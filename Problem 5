@@ -25,7 +25,7 @@ int main ()
   if (i==25) continue;
   if (i==27) continue;
   if (i==29) continue;
-  if (i==30) continue;
+  if (i==30) {cout << i; continue;}
     cout << i << ",";
    }
    
