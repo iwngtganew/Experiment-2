@@ -26,11 +26,11 @@ int main()
 
   switch (x)
    { case 1:             
-			   if (y > 1 && y < 5)         
+		   if (y > 1 && y < 5)         
    	           cout << setw(10) << fixed << setprecision(2) << "V = " << x * y * z;
-   	 	       else 
-   	 	       cout << setw(10) << fixed << setprecision(2) << "V = " << x + (y / z);
-			   break;
+   	 	   else 
+   	 	   cout << setw(10) << fixed << setprecision(2) << "V = " << x + (y / z);
+		       break;
 	 case 2:
 	           if (y <= 5)
 	           cout << setw(10) << fixed << setprecision(2) << "V = " << (x - y) / z;
@@ -38,7 +38,7 @@ int main()
 	           cout << setw(10) << fixed << setprecision(2) << "V = " << x - (sqrt (y+z));
 	 	       break;
 	 default:	
-		   	   cout << setw(10) << fixed << setprecision(2) << "V = " << x + y + z;
+		   cout << setw(10) << fixed << setprecision(2) << "V = " << x + y + z;
 	 	       
    }
 
